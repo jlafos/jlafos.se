@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+{{ partial "menu.html" . }}
+
+
+
+<div class="container">
+  {{ range .Site.Pages }}
+  <div class="row">
+    <div class="col-xs">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Params.auteur }}</p>
+        <p>{{ .Params.mes }}<br>
+        {{ .Params.cie }}</p>
+        <p>{{ .Params.creationdate }}<br>
+        {{ .Params.lieu }}</p>
+        <hr>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

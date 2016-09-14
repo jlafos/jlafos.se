@@ -1,0 +1,4 @@
+baseurl = "http://jlafos.se"
+languageCode = "fr-fr"
+title = "julien lafosse – portfolio"
+theme = "bootstrap-bb"

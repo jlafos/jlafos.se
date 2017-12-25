@@ -1,10 +1,26 @@
-
-<div class="container">
-  <div class="row">
-    <div class="col-xs">
-      {{ range .Site.Pages }}
-        {{ .Title }}<br>
-      {{ end }}
-    </div>
+<div class="row project {{.Params.cat}}">
+  <div class="five columns">
+    <!-- soundcloud -->
+    {{ if isset .Params "soundcloud" }}
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" src="//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .Params.soundcloud }}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true&amp;liking=false&amp;sharing=false"></iframe>
+    {{ end }}
+    {{ if isset .Params "soundcloudplaylist" }}
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" src="//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ .Params.soundcloudplaylist }}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true&amp;liking=false&amp;sharing"></iframe>
+    {{ end }}
+    <!-- img -->
+    {{ if isset .Params "img" }}
+    <img src="/img/{{ .Params.img }}" alt="{{ .Title }}">
+    {{ end }}
+    <!-- vimeo -->
+    {{ if isset .Params "vimeo" }}
+    <iframe src="//player.vimeo.com/video/{{ .Params.vimeo }}" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {{ end }}
+    {{ if isset .Params "youtube" }}
+    <iframe width="100%" src="//www.youtube.com/embed/{{ .Params.youtube }}" frameborder="0" allowfullscreen></iframe>
+    {{ end }}
+  </div>
+  <div class="seven columns">
+    <h3>{{ .Title }}</h3>
+    {{ .Content }}
   </div>
 </div>

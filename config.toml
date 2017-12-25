@@ -1,4 +1,27 @@
 baseurl = "http://jlafos.se"
 languageCode = "fr-fr"
 title = "julien lafosse – portfolio"
-theme = "bootstrap-bb"
+theme = "skeleton-jlafos"
+
+[params]
+  actualites = """
+  <h3>actualités</h3>
+
+  En ce moment, je développe des projets au sein du collectif [Foule Complexe](//foulecomplexe.com) : _Step up!_, _Rock'n chair_ (collaboration avec la cie F) et autres à venir.
+
+  Je réalise le son des [Échappés vifs](//lesechappesvifs.fr) sur _Quai Ouest_, _La Musica deuxième_  et _Maladie de la jeunesse_.
+
+  Pendant mon temps libre, je bricole, lis, écoute, regarde, écris et joue :
+  Max Pd Arduino Unity web hacking diy cuisine science design tech sf essais electro pop ost experimental ambient contemporain jazz cinéma séries beatmaking synth bass & indie-gaming.
+  """
+
+  contact = """
+  <h3>contact</h3>
+
+  [e-mail](mailto:julien@foulecomplexe.com)
+
+  +33 6 88 40 94 84
+
+  CV complet sur [linkedin](//www.linkedin.com/in/jlafos)<br>
+  profil [soundcloud](//soundcloud.com/julien-lafosse)
+  """

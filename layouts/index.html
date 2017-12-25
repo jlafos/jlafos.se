@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+{{ partial "menu.html" . }}
+
+<div class="container projects">
+  {{ range  .Site.Pages.ByDate.Reverse  }}
+    {{ partial "projects.html" . }}
+  {{ end }}
+</div>
+
+{{ partial "contact.html" . }}
+{{ partial "footer.html" . }}

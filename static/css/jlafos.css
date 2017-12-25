@@ -1,0 +1,94 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.3rem;
+  font-weight: 300;
+  background: #FAFAFA; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #e1e8ea , #fafafa); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #e1e8ea , #fafafa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+b, strong, h1, h2, h3 {
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+a,
+.a {
+  color: #f50;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover,
+a:active,
+.a:hover,
+.a:active {
+  color : #ff7f00;
+}
+
+.project {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.actu-contact {
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #485563 #29323c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #485563, #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fafafa;
+}
+
+/* --------------- */
+/* menu            */
+/* --------------- */
+.menu input {
+  display: none;
+}
+
+.menu p {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+.menu label {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 1rem 0 0;
+  font-weight: 300;
+  padding: 0.5rem;
+}
+
+.menu input:checked + label {
+  background: #f50;
+  color: #fafafa;
+  cursor:default
+}
+
+.project-active {
+  display: block;
+}
+
+.project-inactive {
+  display: none;
+}
+
+/* --------------- */
+/* utility classes */
+/* --------------- */
+
+.m-t-5 {
+  margin-top: 5rem;
+}
+
+.p-t-5 {
+  padding-top: 5rem;
+}
+
+.p-b-5 {
+  padding-bottom: 5rem;
+}

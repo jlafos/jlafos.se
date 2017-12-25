@@ -1,13 +1,15 @@
 +++
-title = "manque"
-date = "2016-09-14T16:58:02+02:00"
-creationdate = "septembre 2014"
-auteur = "de Sarah Kane"
-categories = ["spectacle"]
-cie = "collectif X"
-lieu = "Théâtre de l'Élysée"
-mes = "Arthur Fourcade"
-infos = ""
+title = "Manque"
+date = "2014-09-01"
+cat = "spectacle"
+soundcloud = "177182389"
+weight = 6
 +++
 
-Blabla
+de Sarah Kane
+
+mise en scène Arthur Fourcade<br>
+collectif X
+
+Théâtre de L'Élysée — Lyon<br>
+septembre 2014

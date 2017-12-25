@@ -1,0 +1,12 @@
+<div class="actu-contact m-t-5" id="actu-contact">
+  <div class="container">
+    <div class="row p-t-5 p-b-5">
+      <div class="eight columns">
+        {{ .Site.Params.actualites | markdownify }}
+      </div>
+      <div class="four columns">
+        {{ .Site.Params.contact | markdownify }}
+      </div>
+    </div>
+  </div>
+</div>
